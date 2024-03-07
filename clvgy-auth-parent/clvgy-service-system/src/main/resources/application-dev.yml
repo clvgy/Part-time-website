@@ -1,0 +1,42 @@
+server:
+  port: 8085
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 查看日志
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sideline_website?characterEncoding=utf-8&useSSL=false&serviceTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  redis:
+    host: 127.0.0.1 #设置连接的redis服务器ip
+    port: 6379  #设置连接的redis端口号
+    database: 0 #默认0号数据库
+    timeout: 1800000 #超时时间
+    password:
+    jedis:
+      pool:
+        max-active: 20 #最大连接数
+        max-wait: -1    #最大阻塞等待时间(负数表示没限制)
+        max-idle: 5    #最大空闲
+        min-idle: 0     #最小空闲
+  servlet:
+    multipart:
+      max-file-size: 100MB #最大上传单文件
+      max-request-size: 200MB #最大请求大小
+# 阿里配置
+al:
+  oss: #存储
+    endpoint: oss-cn-guangzhou.aliyuncs.com   # 域
+    accessKeyId: LTAI5tGk5Yjx2VR2Ao7sTSUV   # 秘钥
+    accessKeySecret: nnd0h1vcO63BCmlH8z350DAokWtIgc # 秘钥
+    bucketName: clvgy-movie  # 桶名
+    url: https://clvgy-movie.oss-cn-guangzhou.aliyuncs.com  # 访问地址
+  vod: # 视频
+    regionId: cn-shanghai
+    accessKeyId: LTAI5tGk5Yjx2VR2Ao7sTSUV
+    accessKeySecret: nnd0h1vcO63BCmlH8z350DAokWtIgc

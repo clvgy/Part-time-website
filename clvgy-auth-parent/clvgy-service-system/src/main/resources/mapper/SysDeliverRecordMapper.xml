@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.clvgy.system.mapper.SysDeliverRecordMapper">
+
+    <resultMap id="SysDeliverRecordMap" type="com.clvgy.model.system.SysDeliverRecord" autoMapping="true">
+    </resultMap>
+
+    <!-- 用于select查询公用抽取的列 -->
+    <sql id="columns">
+      id,resume_id,recruit_id,enterprise_id,create_time,update_time,is_deleted
+   </sql>
+
+    <select id="selectPage" resultMap="SysDeliverRecordMap">
+        select <include refid="columns" />
+        from sys_deliver_record
+            WHERE enterprise_id
+            IN(SELECT id FROM `sys_enterprise` WHERE user_id
+            IN (SELECT id FROM sys_user WHERE username = #{username}))
+            <if test="vo.keyword != null and vo.keyword != ''">
+                and (recruit_id like CONCAT('%',#{vo.keyword},'%') or  resume_id like CONCAT('%',#{vo.keyword},'%'))
+            </if>
+            <if test="vo.createTimeBegin != null and vo.createTimeBegin != ''">
+                and create_time >= #{vo.createTimeBegin}
+            </if>
+            <if test="vo.createTimeEnd != null and vo.createTimeEnd != ''">
+                and create_time &lt;= #{vo.createTimeEnd}
+            </if>
+            and is_deleted = 0
+        order by id desc
+    </select>
+
+</mapper>

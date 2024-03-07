@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.clvgy.system.mapper.SysRecruitMapper">
+
+    <resultMap id="SysUserMap" type="com.clvgy.model.system.SysRecruit" autoMapping="true">
+    </resultMap>
+
+    <!-- 用于select查询公用抽取的列 -->
+    <sql id="columns">
+      id,enterprise_id,region_id,position_id,recruit_num,recruit_title,salary,timeunit,settle_id,welfare,salary_memo,start_time,end_time,sup_end_time,
+      work_time,work_place,pos_memo,requirement,need_inteview,contat_people,contact_phone,
+      email,browse_times,apply_times,create_time,update_time,is_deleted
+   </sql>
+
+    <select id="selectPage" resultMap="SysUserMap">
+        select <include refid="columns" />
+        FROM sys_recruit WHERE enterprise_id
+        IN(SELECT en.id FROM sys_enterprise en WHERE en.user_id
+        IN(SELECT u.id FROM sys_user u WHERE u.username = #{username}))
+            <if test="vo.keyword != null and vo.keyword != ''">
+                and (recruit_title like CONCAT('%',#{vo.keyword},'%') or pos_memo like CONCAT('%',#{vo.keyword},'%'))
+            </if>
+            <if test="vo.createTimeBegin != null and vo.createTimeBegin != ''">
+                and create_time >= #{vo.createTimeBegin}
+            </if>
+            <if test="vo.createTimeEnd != null and vo.createTimeEnd != ''">
+                and create_time &lt;= #{vo.createTimeEnd}
+            </if>
+            and is_deleted = 0
+        order by id desc
+    </select>
+    <select id="getEnterpriseIdByUsername" resultType="java.lang.Long">
+        SELECT id FROM `sys_enterprise` WHERE user_id
+        IN (SELECT id FROM sys_user WHERE username = #{username})
+    </select>
+    <select id="selectRecruitList" resultType="com.clvgy.model.system.SysRecruit">
+        select <include refid="columns" />
+        FROM sys_recruit WHERE 1=1
+        <if test="vo.enterpriseId != null and vo.enterpriseId != ''">
+            and enterprise_id = #{vo.enterpriseId}
+        </if>
+        <if test="vo.regionId != null and vo.regionId != ''">
+            and region_id = #{vo.regionId}
+        </if>
+        <if test="vo.positionId != null and vo.positionId != ''">
+            and position_id = #{vo.positionId}
+        </if>
+        and is_deleted = 0
+        order by id desc
+    </select>
+
+</mapper>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.clvgy.system.mapper.SysResumeMapper">
+
+    <select id="findAllResumeByUsername" resultType="com.clvgy.model.system.SysResume">
+        select * from  sys_resume r where r.user_id in
+        (select u.id from  sys_user u where u.username = #{username}) AND r.is_deleted=0;
+    </select>
+</mapper>
