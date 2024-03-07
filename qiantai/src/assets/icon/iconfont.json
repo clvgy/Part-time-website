@@ -1,0 +1,289 @@
+{
+  "id": "3999635",
+  "name": "adduser",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "622781",
+      "name": "ZS评价次数",
+      "font_class": "pingjiacishu",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "2959017",
+      "name": "工资与福利",
+      "font_class": "gongziyufuli",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "3777781",
+      "name": "福利",
+      "font_class": "fuli",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "10646992",
+      "name": "查看",
+      "font_class": "chakan",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "27594516",
+      "name": "职位",
+      "font_class": "a-bianzu11",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "709841",
+      "name": "指缘招聘",
+      "font_class": "zhiyuanzhaopin",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "1079372",
+      "name": "招聘",
+      "font_class": "zhaopin",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "3826839",
+      "name": "附件",
+      "font_class": "fujian",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "3876730",
+      "name": "工作经验",
+      "font_class": "gongzuojingyan",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "3876731",
+      "name": "备注",
+      "font_class": "beizhu",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "3876732",
+      "name": "毕业学校",
+      "font_class": "biyexuexiao",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "3876733",
+      "name": "奖励情况",
+      "font_class": "jiangliqingkuang",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "3876734",
+      "name": "家庭住址",
+      "font_class": "jiatingzhuzhi",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "3876735",
+      "name": "个人信息",
+      "font_class": "gerenxinxi",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "3876736",
+      "name": "电子邮件",
+      "font_class": "dianziyoujian",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "3876737",
+      "name": "期望薪资",
+      "font_class": "qiwangxinzi",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "3876738",
+      "name": "联系电话",
+      "font_class": "lianxidianhua",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "3876739",
+      "name": "男",
+      "font_class": "nan",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "3876740",
+      "name": "求职意向",
+      "font_class": "qiuzhiyixiang",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "3876741",
+      "name": "兴趣爱好",
+      "font_class": "xingquaihao",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "3876743",
+      "name": "生日",
+      "font_class": "shengri",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "3876744",
+      "name": "学历",
+      "font_class": "xueli",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "3876745",
+      "name": "自我评价",
+      "font_class": "ziwopingjia",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "3876747",
+      "name": "女",
+      "font_class": "nv",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "3876761",
+      "name": "技能",
+      "font_class": "jineng",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "6168222",
+      "name": "我的简历",
+      "font_class": "wodejianli",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "1244194",
+      "name": "邮箱",
+      "font_class": "youxiang",
+      "unicode": "e694",
+      "unicode_decimal": 59028
+    },
+    {
+      "icon_id": "1107042",
+      "name": "发布需求",
+      "font_class": "fabuxuqiu",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "5122190",
+      "name": "职位",
+      "font_class": "zhiwei-",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "26448544",
+      "name": "结算单位",
+      "font_class": "jiesuandanwei",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "16936340",
+      "name": "薪资_icon",
+      "font_class": "xinzi_icon",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "3283217",
+      "name": "角色添加",
+      "font_class": "add-role",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "4676490",
+      "name": "用户管理",
+      "font_class": "yonghuguanli",
+      "unicode": "e70c",
+      "unicode_decimal": 59148
+    },
+    {
+      "icon_id": "23568045",
+      "name": "角色管理",
+      "font_class": "jiaoseguanli",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "12982016",
+      "name": "icon_动漫模型",
+      "font_class": "icon_dongmanmoxing",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "13240679",
+      "name": "用户注册",
+      "font_class": "yonghuzhuce",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "8152589",
+      "name": "热门地址 ",
+      "font_class": "remendizhikaobei",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "25076851",
+      "name": "首页",
+      "font_class": "B-",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "10905594",
+      "name": "火爆",
+      "font_class": "huobao",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "15011737",
+      "name": "萌萌的皮卡丘",
+      "font_class": "100-2",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}
